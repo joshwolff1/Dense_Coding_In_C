@@ -8,9 +8,11 @@
  * Date: June 4 2018
  */
 
-// Find the tensor product of two matrices
-void dense_coding_op_init(int qubits);
-// i.e. apply_operator('Z', 'A'); or apply_operator('X', 'B');
-int apply_operator(char op, char person);
+/*
+ * Runs a basic dense coding operation with the specified amount of qubits.
+ * Made for range of 2 to 3 qubits.
+ * Returns -1 if operation did not initialize or complete successfully.
+*/
+int dense_coding_op(void);
 
 #endif
